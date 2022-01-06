@@ -23,7 +23,7 @@ while True:
     usernumber = int(input("Okay! Now, you choose a number: "))
     result = pcnumber + usernumber
 
-    # Who win the game and the end of it
+    # Who win the game
     print("Hm.. Let me sum our numbers... I'm not good at math...")
     sleep(4.5)
     if pc == "EVENS" and result % 2 == 0:
