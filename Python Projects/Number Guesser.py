@@ -8,7 +8,7 @@ def Guess():
     while True:
         try:
             attempts += 1  # This will count every attempt made by the user
-            user_number = int(input())
+            user_number = int(input().replace(' ', ''))
         except:
             print("You should put a number between 0 and 10 <3")
         else:
@@ -22,7 +22,8 @@ def Guess():
 def NextGame():
     # If the user choose anything but "[S] or [N]", they will get stuck in loop.
     while True:
-        choice = input("Do you want to play again? [S]/[N]").upper()
+        choice = input(
+            "Do you want to play again? [S]/[N] ").upper().replace(' ', '')
         if (choice in "[S]" or choice in "[N]") and choice not in "[]":
             break
         else:
@@ -39,7 +40,7 @@ sleep(2)
 # The user will choose a mode or will get stuck in a loop until they do so.
 while True:
     mode = input(
-        "\nFirst of all, choose a mode: \n[1] Normal mode \n[2] Hide the thimble\n")
+        "\nFirst of all, choose a mode: \n[1] Normal mode \n[2] Hide the thimble\n").replace(' ', '')
     while True:
         if mode.isnumeric() == False or int(mode) != 1 and int(mode) != 2:
             mode = input("I said to you to choose 1 or 2.\n")
@@ -88,11 +89,11 @@ while True:
                 break
             # If the user's choice is 2 numbers or less apart from the computer one, the user will know they are getting close.
             elif pc_number > user_number >= pc_number-2 or pc_number < user_number <= pc_number+2:
-                print("You are hot.")
+                print("Hot.")
 
             # Else, they know they aren't close to the computer's number.
             else:
-                print("You are cold.")
+                print("Cold.")
 
         # When the user win
         print(f"Yes! You are right! You made it with {attempts} attempts!")
