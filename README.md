@@ -7,4 +7,4 @@
  <p align="center">Those are my first mini projects and exercises.</p>
  <h2>:zap: How does it work?</h2>
  <p>Go to the folder "Python Projects" and copy the code you want to test and paste in a IDE</p>
-<h3>:star2: Please "star" this repository if you like <sub>and please hire me lol</sub>:revolving_hearts:</h3>
+<h3>:star2: Please "star" this repository if you like <sub><del>and please hire me lol</del></sub>:revolving_hearts:</h3>
