@@ -7,14 +7,10 @@ print(f'\033[1;36m {"Area calculator(w/ BLACKPINK homage)!":^50}\033[m')
 print("\033[1;36m=-"*25, "\033[m")
 
 # Function to calculate the area of the rooms
-
-
 def area(measures):
     return measures[0] * measures[1]
 
 # Function to "draw" the rooms
-
-
 def draw(bp):
     if homage in "[E]" and bp == 'IS':
         print("-"*20)
@@ -31,8 +27,7 @@ while True:
     while True:
         # This is just a silly play with BLACKPINK's (Girl Group that I like) catchphrase "BLACKPINK in your area!". Please, don't take it too seriously.
         # Here's the code to enable and disable the homage:
-        homage = input(
-            "First, enable or disable the BLACKPINK's homage? [D] for 'Disable' and [E] for 'Enable': ").upper().strip()
+        homage = input("First, enable or disable the BLACKPINK's homage? [D] for 'Disable' and [E] for 'Enable': ").upper().strip()
         if homage in "[E]" or homage in "[e]" or homage in "[d]" or homage in "[D]":
             break
         else:
@@ -52,8 +47,7 @@ while True:
     # Random the existence of BP in the room
     area(len_wid)
     bp = ''.join(sample(['IS', 'is NOT'], 1))
-    print(
-        "~~~~Let me see if BLACKPINK's in your area" if homage in "[E]" or homage in "[e]" else "",  end='')
+    print("~~~~Let me see if BLACKPINK's in your area" if homage in "[E]" or homage in "[e]" else "",  end='')
     for wait in range(0, 6):
         sleep(1)
         print(".", end='')
