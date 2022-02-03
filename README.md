@@ -4,7 +4,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png" alt="Python logo" style="height: 100px; width:100px;"/>
 </p>
  
-<p align="center">Those are my first mini projects and exercises.</p>
+<p align="center">Those are my first projects and exercises.</p>
 <h2>:zap: How does it work?</h2>
 <p>Go to the folder "Python Projects" and copy the code you want to test and paste in a IDE</p>
 <br>
