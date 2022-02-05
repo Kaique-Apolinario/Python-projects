@@ -79,6 +79,12 @@ while True:
         input("\033[4;33mPress Enter to continue:\033[m ")
 
 
+
+
+
+
+
+
     #If the user chooses to "Delete Someone"
     elif choice == 3:
         dec("DELETE") #The introduction
@@ -108,6 +114,15 @@ while True:
                 DataBase.truncate(0) #Here, the "DataBase.txt" content will be erased
                 DataBase.write("".join(ListOfLines)) #Here, each line of "ListOfLines" var will be a line in "Database.txt" 
                 DataBase.close()
+
+
+
+
+
+
+
+
+
 
 
     #If the user choose to "Exit" the programm
